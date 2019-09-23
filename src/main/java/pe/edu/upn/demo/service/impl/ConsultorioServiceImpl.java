@@ -12,54 +12,40 @@ import pe.edu.upn.demo.model.repository.ConsultorioRepository;
 import pe.edu.upn.demo.service.ConsultorioService;
 
 @Service
-public class ConsultorioServiceImpl implements ConsultorioService{
-	
+public class ConsultorioServiceImpl implements ConsultorioService {
+
 	@Autowired
 	private ConsultorioRepository consultorioRepository;
 	
 	@Transactional(readOnly = true)
 	@Override
 	public List<Consultorio> findAll() throws Exception {
-		// TODO Auto-generated method stub
 		return consultorioRepository.findAll();
 	}
-
 	@Transactional(readOnly = true)
 	@Override
 	public Optional<Consultorio> findById(Integer id) throws Exception {
-		// TODO Auto-generated method stub
 		return consultorioRepository.findById(id);
 	}
-
 	@Transactional
 	@Override
 	public Consultorio save(Consultorio entity) throws Exception {
-		// TODO Auto-generated method stub
 		return consultorioRepository.save(entity);
 	}
-
 	@Transactional
 	@Override
 	public Consultorio update(Consultorio entity) throws Exception {
-		// TODO Auto-generated method stub
 		return consultorioRepository.save(entity);
 	}
-
 	@Transactional
 	@Override
 	public void deleteById(Integer id) throws Exception {
-		// TODO Auto-generated method stub
 		consultorioRepository.deleteById(id);
 	}
-
 	@Transactional
 	@Override
 	public void deleteAll() throws Exception {
-		// TODO Auto-generated method stub
 		consultorioRepository.deleteAll();
 	}
-		
-	
-	
-	
+
 }

@@ -47,21 +47,21 @@ public class DemoApplicationTests {
 			Paciente antiguo = new Paciente();
 			antiguo.setCodigo("N01");
 			antiguo.setNombre("Antiguo");
-			antiguo.setDireccion("jr. Breña ");
+			antiguo.setDireccion("jr. BreÃ±a ");
 			antiguo.setTelefono(958785514);
 			antiguo.setFechaNacimiento(new Date(2019, 9, 9));
 			
 			Paciente carlos = new Paciente();
 			carlos.setCodigo("N02");
 			carlos.setNombre("Jesus Mendoza");
-			carlos.setDireccion("jr. Breña ");
+			carlos.setDireccion("jr. BreÃ±a ");
 			carlos.setTelefono(958785514);
 			carlos.setFechaNacimiento(new Date(2019, 9, 9));
 			
 			Paciente jose = new Paciente();
 			jose.setCodigo("N03");
 			jose.setNombre("Jose nazaret");
-			jose.setDireccion("jr. Breña ");
+			jose.setDireccion("jr. BreÃ±a ");
 			jose.setTelefono(95878544);
 			jose.setFechaNacimiento(new Date(2019, 9, 9));
 			

@@ -1,6 +1,5 @@
 package pe.edu.upn.demo.service.impl;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -21,37 +20,33 @@ public class MedicoServiceImpl implements MedicoService{
 	@Transactional(readOnly = true)
 	@Override
 	public List<Medico> findAll() throws Exception {
-		// TODO Auto-generated method stub
 		return medicoRepository.findAll();
 	}
+	
 	@Transactional(readOnly = true)
 	@Override
 	public Optional<Medico> findById(Integer id) throws Exception {
-		// TODO Auto-generated method stub
 		return medicoRepository.findById(id);
 	}
 	@Transactional
 	@Override
 	public Medico save(Medico entity) throws Exception {
-		// TODO Auto-generated method stub
 		return medicoRepository.save(entity);
 	}
 	@Transactional
 	@Override
 	public Medico update(Medico entity) throws Exception {
-		// TODO Auto-generated method stub
 		return medicoRepository.save(entity);
 	}
 	@Transactional
 	@Override
 	public void deleteById(Integer id) throws Exception {
-		// TODO Auto-generated method stub
 		medicoRepository.deleteById(id);
+		
 	}
 	@Transactional
 	@Override
 	public void deleteAll() throws Exception {
-		// TODO Auto-generated method stub
 		medicoRepository.deleteAll();
 	}
 
